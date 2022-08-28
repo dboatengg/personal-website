@@ -546,7 +546,7 @@
                 name=""
                 placeholder="e.g.s Dickson Boateng"
                 id=""
-                class="border-b-2 border-text-light border-text-dark pb-2 focus:border-button dark:focus:border-text-white"
+                class="border-b-2 border-text-light border-text-dark pb-2 focus:border-button dark:focus:border-text-white focus:text-title-light dark:focus:text-text-white"
               />
             </div>
             <div class="flex flex-col gap-4">
@@ -560,7 +560,7 @@
                 name=""
                 placeholder="e.g.s hey@gmail.com"
                 id=""
-                class="border-b-2 border-text-light border-text-dark pb-2 focus:border-button dark:focus:border-text-white"
+                class="border-b-2 border-text-light border-text-dark pb-2 focus:border-button dark:focus:border-text-white focus:text-title-light dark:focus:text-text-white"
               />
             </div>
             <div class="flex flex-col gap-4">
@@ -574,15 +574,20 @@
                 id=""
                 cols="20"
                 rows="3"
-                class="border-b-2 border-text-light border-text-dark focus:border-button dark:focus:border-text-white"
+                class="border-b-2 border-text-light border-text-dark focus:border-button focus:text-title-light dark:focus:text-text-white dark:focus:border-text-white"
                 placeholder="What's your message?"
               ></textarea>
             </div>
-            <a
+            <!-- <a
               href="#"
               class="py-3 px-6 text-center bg-button text-text-white text-[16px] rounded-md font-semibold"
               >SEND MESSAGE</a
-            >
+            > -->
+            <input
+              class="py-3 px-6 text-center bg-button text-text-white text-[16px] rounded-md font-semibold cursor-pointer mt-[-30px]"
+              type="submit"
+              value="SEND MESSAGE"
+            />
           </form>
         </div>
       </section>
