@@ -5,11 +5,19 @@
 /***********Epilogue font family*********/
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap");
 
-/****Nav Menu****/
-nav .active {
-  font-weight: bold;
-  color: #373737;
+body {
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
 }
+/******dark/light mode******/
+.display-none {
+  display: none;
+}
+
+.navbar.shadow {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+/****Nav Menu****/
 .hamburger {
   display: none;
 }
@@ -20,17 +28,62 @@ nav .active {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
 }
-
+.light-mode-icon {
+  cursor: pointer;
+}
+.navbar {
+  transition: 0.3s ease-in-out;
+}
 @media only screen and (max-width: 767px) {
-  .hamburger {
-    display: block;
-  }
   .light-mode-icon {
-    display: none;
+    position: absolute;
+    right: 50px;
+    z-index: 9999999999;
   }
   .nav-menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 6rem 3rem;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    flex-direction: column;
+    width: 70%;
+    height: 100vh;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 2 2px 12px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    max-width: 300px;
   }
+  .nav-menu.active {
+    right: 0;
+  }
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 99999;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 1285px) {
+  /* .h1 {
+    font-size: 30px;
+  } */
 }

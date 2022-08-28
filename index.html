@@ -5,39 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boateng Dickson</title>
-
     <!-- css file -->
     <link rel="stylesheet" href="./dist/output.css" />
+    <!-- favicon  -->
+    <link rel="icon" href="images/logo--light.svg" />
   </head>
-  <body class="font-body bg-background-light text-text-light">
+  <body
+    class="dark:bg-background-dark font-body bg-background-light dark:text-text-dark text-text-light"
+  >
     <header>
-      <nav>
+      <!-- navbar  -->
+      <nav
+        class="navbar bg-background-light w-full fixed dark:bg-background-dark"
+      >
         <!-- flex container  -->
-        <div class="flex justify-between container py-5 mx-auto items-center">
+        <div
+          class="flex justify-between relative w-11/12 container py-5 mx-auto items-center"
+        >
           <!-- logo  -->
-          <a class="" href="index.html"
-            ><img src="images/logo--dark.svg" alt=""
-          /></a>
+          <img class="logo-dark" src="images/logo--dark.svg" alt="" />
+
+          <img class="logo-light" src="images/logo--light.svg" alt="" />
+
           <!-- right item  -->
-          <div class="self-end nav-menu space-x-5">
-            <a class="active" href="#">Home</a>
-            <a class="" href="#">Work</a>
-            <a class="" href="#">Blog</a>
-            <a class="" href="#">About</a>
+          <div
+            class="nav-menu bg-card-light md:bg-transparent md:dark:bg-transparent dark:bg-card-dark md:space-x-5"
+          >
+            <a class="nav-link dark:text-text-white font-bold" href="index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="#">Work</a>
+            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#">About</a>
           </div>
           <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+            <span class="bar bg-card-dark dark:bg-card-light"></span>
+            <span class="bar bg-card-dark dark:bg-card-light"></span>
+            <span class="bar bg-card-dark dark:bg-card-light"></span>
           </div>
           <img
-            class="light-mode-icon"
+            class="icon-moon light-mode-icon"
             src="images/light-mode-icon.svg"
+            alt=""
+          />
+          <img
+            class="icon-sun light-mode-icon"
+            src="images/dark-mode-icon.svg"
             alt=""
           />
         </div>
       </nav>
     </header>
+
+    <!-- main content  -->
+    <main class="main">
+      <!-- hero  -->
+      <section class="">
+        <!-- flex container -->
+        <div
+          class="hero flex flex-col-reverse md:flex-row items-center w-11/12 gap-2 container mx-auto lg:py-[80px] py-[100px]"
+        >
+          <!-- left item -->
+          <div
+            class="flex flex-col gap-3 items-center md:items-start text-center md:text-start w-full md:w-1/2"
+          >
+            <h1
+              class="text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-title-light dark:text-title-dark"
+            >
+              I design and develop web applications.
+            </h1>
+            <p class="md:w-4/5">
+              I'm a frontend developer with a passion for creating seamless
+              UI/UX experiences using modern web technologies.
+            </p>
+            <a
+              href="#"
+              class="py-3 px-6 bg-button text-text-white text-[16px] rounded-md"
+              >SEE PROJECTS</a
+            >
+          </div>
+          <!-- image  -->
+          <img class="hero-img md:w-1/2" src="images/hero-image.svg" alt="" />
+        </div>
+      </section>
+    </main>
   </body>
   <script src="./script.js"></script>
 </html>
