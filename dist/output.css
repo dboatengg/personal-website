@@ -598,16 +598,6 @@ video {
   margin-right: auto;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -616,36 +606,8 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.ml-0 {
-  margin-left: 0px;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-\[20px\] {
-  margin-bottom: 20px;
-}
-
-.mb-\[200px\] {
-  margin-bottom: 200px;
-}
-
-.mb-7 {
-  margin-bottom: 1.75rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
+.mb-\[50px\] {
+  margin-bottom: 50px;
 }
 
 .flex {
@@ -660,28 +622,12 @@ video {
   width: 91.666667%;
 }
 
-.w-\[5rem\] {
-  width: 5rem;
-}
-
 .w-\[3rem\] {
   width: 3rem;
 }
 
-.w-2\/5 {
-  width: 40%;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
 .w-\[70\%\] {
   width: 70%;
-}
-
-.w-\[100\%\] {
-  width: 100%;
 }
 
 .transform {
@@ -740,21 +686,8 @@ video {
   gap: 0.25rem;
 }
 
-.gap-\[20px\] {
-  gap: 20px;
-}
-
-.gap-\[60px\] {
-  gap: 60px;
-}
-
-.gap-x-\[60px\] {
-  -moz-column-gap: 60px;
-       column-gap: 60px;
-}
-
-.gap-y-\[30px\] {
-  row-gap: 30px;
+.gap-\[50px\] {
+  gap: 50px;
 }
 
 .gap-x-\[50px\] {
@@ -766,12 +699,46 @@ video {
   row-gap: 20px;
 }
 
+.gap-x-\[150px\] {
+  -moz-column-gap: 150px;
+       column-gap: 150px;
+}
+
+.gap-x-\[100px\] {
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+
+.gap-x-\[10px\] {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.gap-x-\[80px\] {
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
-.rounded-sm {
-  border-radius: 0.125rem;
+.border-2 {
+  border-width: 2px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-text-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(106 106 106 / var(--tw-border-opacity));
+}
+
+.border-text-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(162 161 166 / var(--tw-border-opacity));
 }
 
 .bg-background-light {
@@ -829,10 +796,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
 .pb-\[40px\] {
   padding-bottom: 40px;
 }
@@ -864,27 +827,6 @@ video {
   line-height: 2.25rem;
 }
 
-.text-\[1rem\] {
-  font-size: 1rem;
-}
-
-.text-\[2rem\] {
-  font-size: 2rem;
-}
-
-.text-\[5rem\] {
-  font-size: 5rem;
-}
-
-.text-\[50px\] {
-  font-size: 50px;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -892,10 +834,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .text-text-light {
@@ -913,6 +851,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-button {
+  --tw-text-opacity: 1;
+  color: rgb(115 100 208 / var(--tw-text-opacity));
+}
+
 .drop-shadow-md {
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -923,6 +866,14 @@ video {
 body {
   font-size: 18px;
   transition: 0.3s ease-in-out;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  /* border-bottom: 2px white solid; */
+  outline: 0;
+  padding: 0 1rem;
 }
 
 /******dark/light mode******/
@@ -1028,6 +979,11 @@ body {
   } */
 }
 
+.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .dark .dark\:bg-background-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(30 30 37 / var(--tw-bg-opacity));
@@ -1071,12 +1027,7 @@ body {
     margin-right: 0px;
   }
 
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .md\:mb-0 {
+  .md\:mb-\[0px\] {
     margin-bottom: 0px;
   }
 
@@ -1092,10 +1043,6 @@ body {
     width: 40%;
   }
 
-  .md\:w-\[2rem\] {
-    width: 2rem;
-  }
-
   .md\:w-\[5rem\] {
     width: 5rem;
   }
@@ -1108,20 +1055,12 @@ body {
     width: 60%;
   }
 
-  .md\:w-\[70\%\] {
-    width: 70%;
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
 
   .md\:items-start {
     align-items: flex-start;
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:justify-start {
@@ -1150,16 +1089,6 @@ body {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .md\:text-8xl {

@@ -109,7 +109,11 @@
               <hr
                 class="text-text-light dark:text-text-dark w-[3rem] md:w-[5rem]"
               />
-              <h2 class="text-2xl font-bold">My Works</h2>
+              <h2
+                class="text-2xl font-bold text-title-light dark:text-title-dark"
+              >
+                My Works
+              </h2>
             </div>
             <p class="mb-5 text-center md:text-start">
               Check out a few of the main projects I have worked on. We have
@@ -265,7 +269,11 @@
               <hr
                 class="text-text-light dark:text-text-dark w-[3rem] md:w-[5rem]"
               />
-              <h2 class="text-2xl font-bold">About Me</h2>
+              <h2
+                class="text-2xl font-bold text-title-light dark:text-title-dark"
+              >
+                About Me
+              </h2>
             </div>
             <p class="mb-5 text-center md:text-start">
               Get a brief look at who I am and what I do. If you would like to
@@ -321,7 +329,9 @@
           <hr
             class="text-text-light dark:text-text-dark w-[3rem] md:w-[5rem]"
           />
-          <h2 class="text-2xl font-bold">My Skills</h2>
+          <h2 class="text-2xl font-bold text-title-light dark:text-title-dark">
+            My Skills
+          </h2>
         </div>
         <!-- container  -->
         <div
@@ -344,8 +354,8 @@
             <p class="font-bold">FIGMA</p>
           </div>
           <div class="flex flex-col gap-2 items-center">
-            <i class="fa-brands fa-square-github text-6xl md:text-8xl"></i>
-            <p class="font-bold">GITHUB</p>
+            <i class="fa-brands fa-git-alt text-6xl md:text-8xl"></i>
+            <p class="font-bold">GIT</p>
           </div>
           <div class="flex flex-col gap-2 items-center">
             <i class="fa-brands fa-html5 text-6xl md:text-8xl"></i>
@@ -374,8 +384,89 @@
         </div>
       </section>
 
+      <!-- contact me  -->
       <section>
-        <div class=""></div>
+        <!-- container  -->
+        <div
+          class="container mx-auto w-11/12 lg:py-[80px] py-[100px] flex flex-col md:flex-row gap-x-[80px]"
+        >
+          <div
+            class="md:mx-0 md:w-1/2 mb-[50px] md:mb-[0px] flex flex-col gap-5 items-start"
+          >
+            <div
+              class="flex gap-2 items-center justify-center md:justify-start"
+            >
+              <hr
+                class="text-text-light dark:text-text-dark w-[3rem] md:w-[5rem]"
+              />
+              <h2
+                class="text-2xl font-bold text-title-light dark:text-title-dark"
+              >
+                Contact Me
+              </h2>
+            </div>
+            <p class="mb-5">
+              Do not hesitate to contact me through the form here or by direct
+              email on
+              <a
+                class="text-button hover:underline"
+                href="mailto:dicksonboateng@proton.me"
+                >dicksonboateng@proton.me</a
+              >
+              regardless of the subject.
+            </p>
+          </div>
+          <form class="md:w-1/2 flex flex-col gap-[50px]" action="">
+            <div class="flex flex-col gap-4">
+              <label
+                class="text-title-light dark:text-title-dark font-bold"
+                for=""
+                >What's your name?</label
+              >
+              <input
+                type="text"
+                name=""
+                placeholder="e.g.s Dickson Boateng"
+                id=""
+                class="border-b-2 border-text-light border-text-dark"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label
+                class="text-title-light dark:text-title-dark font-bold"
+                for=""
+                >Where can I reach you?</label
+              >
+              <input
+                type="email"
+                name=""
+                placeholder="e.g.s hey@gmail.com"
+                id=""
+                class="border-b-2 border-text-light border-text-dark"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <label
+                class="text-title-light dark:text-title-dark font-bold"
+                for=""
+                >What's your name?</label
+              >
+              <textarea
+                name=""
+                id=""
+                cols="20"
+                rows="3"
+                class="border-b-2 border-text-light border-text-dark"
+                placeholder="What's your message?"
+              ></textarea>
+            </div>
+            <a
+              href="#"
+              class="py-3 px-6 text-center bg-button text-text-white text-[16px] rounded-md"
+              >SEND MESSAGE</a
+            >
+          </form>
+        </div>
       </section>
     </main>
   </body>
