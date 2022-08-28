@@ -12,9 +12,13 @@ body {
 input,
 textarea {
   background-color: transparent;
-  /* border-bottom: 2px white solid; */
   outline: 0;
-  padding: 0 1rem;
+  transition: 0.3s ease-in-out;
+  /* padding: 0 1rem; */
+}
+.blog-item {
+  width: 100%;
+  max-width: 400px;
 }
 /******dark/light mode******/
 .display-none {
@@ -23,9 +27,6 @@ textarea {
 .navbar {
   z-index: 99;
 }
-/* hr {
-  width: 5rem;
-} */
 .navbar.shadow {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
@@ -95,10 +96,4 @@ textarea {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-}
-
-@media only screen and (max-width: 1285px) {
-  /* .h1 {
-    font-size: 30px;
-  } */
 }
