@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,6 +20,7 @@
     />
   </head>
   <body
+    id="body"
     class="dark:bg-background-dark font-body bg-background-light dark:text-text-dark text-text-light"
   >
     <header>
@@ -40,12 +41,31 @@
           <div
             class="nav-menu bg-card-light md:bg-transparent md:dark:bg-transparent dark:bg-card-dark md:space-x-5"
           >
-            <a class="nav-link dark:text-text-white font-bold" href="index.html"
+            <a
+              class="nav-link dark:text-text-white font-bold text-[27px] md:text-[18px] tracking-wider md:tracking-normal"
+              href="#body"
               >Home</a
             >
-            <a class="nav-link" href="#">Work</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">About</a>
+            <a
+              class="nav-link text-[27px] md:text-[18px] tracking-wider md:tracking-normal"
+              href="#work"
+              >Work</a
+            >
+            <a
+              class="nav-link text-[27px] md:text-[18px] tracking-wider md:tracking-normal"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="nav-link text-[27px] md:text-[18px] tracking-wider md:tracking-normal"
+              href="#blog"
+              >Blog</a
+            >
+            <a
+              class="nav-link text-[27px] md:text-[18px] tracking-wider md:tracking-normal"
+              href="#contact"
+              >Contact</a
+            >
           </div>
           <div class="hamburger">
             <span class="bar bg-card-dark dark:bg-card-light"></span>
@@ -79,7 +99,7 @@
             class="flex flex-col gap-3 items-center md:items-start text-center md:text-start w-full md:w-1/2"
           >
             <h1
-              class="text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-title-light dark:text-title-dark"
+              class="text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-title-light dark:text-title-dark"
             >
               I design and develop web applications.
             </h1>
@@ -99,7 +119,7 @@
       </section>
 
       <!-- display work  -->
-      <section class="work">
+      <section id="work" class="work">
         <!--  container  -->
         <div class="container mx-auto">
           <div class="w-11/12 mx-auto md:mx-0 md:w-2/5 flex flex-col gap-5">
@@ -314,10 +334,11 @@
               </div>
               <div class="">
                 <img
-                  class="w-[70%] mx-auto rounded-md hidden md:block"
+                  class="w-[70%] mx-auto rounded-md"
                   src="images/profile-img.svg"
                   alt=""
                   srcset=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -389,7 +410,7 @@
       </section>
 
       <!-- Blog -->
-      <section class="blog">
+      <section id="blog" class="blog">
         <!-- container  -->
         <div class="container mx-auto w-11/12 pt-[100px]">
           <div
@@ -474,7 +495,7 @@
       </section>
 
       <!-- contact me  -->
-      <section>
+      <section id="contact">
         <!-- container  -->
         <div
           class="container mx-auto w-11/12 lg:py-[80px] py-[100px] flex flex-col md:flex-row gap-x-[80px]"
