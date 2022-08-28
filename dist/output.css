@@ -614,10 +614,6 @@ video {
   margin-bottom: 50px;
 }
 
-.mt-\[-10px\] {
-  margin-top: -10px;
-}
-
 .mt-\[-30px\] {
   margin-top: -30px;
 }
@@ -718,6 +714,10 @@ video {
   gap: 0.25rem;
 }
 
+.gap-\[30px\] {
+  gap: 30px;
+}
+
 .gap-\[50px\] {
   gap: 50px;
 }
@@ -731,10 +731,6 @@ video {
   row-gap: 20px;
 }
 
-.gap-y-\[40px\] {
-  row-gap: 40px;
-}
-
 .gap-x-\[80px\] {
   -moz-column-gap: 80px;
        column-gap: 80px;
@@ -742,6 +738,25 @@ video {
 
 .gap-y-\[50px\] {
   row-gap: 50px;
+}
+
+.gap-y-\[30px\] {
+  row-gap: 30px;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .scroll-smooth {
@@ -1047,21 +1062,6 @@ textarea {
   border-color: rgb(115 100 208 / var(--tw-border-opacity));
 }
 
-.focus\:text-text-light:focus {
-  --tw-text-opacity: 1;
-  color: rgb(106 106 106 / var(--tw-text-opacity));
-}
-
-.focus\:text-text-dark:focus {
-  --tw-text-opacity: 1;
-  color: rgb(162 161 166 / var(--tw-text-opacity));
-}
-
-.focus\:text-title-dark:focus {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .focus\:text-title-light:focus {
   --tw-text-opacity: 1;
   color: rgb(55 55 55 / var(--tw-text-opacity));
@@ -1100,11 +1100,6 @@ textarea {
 .dark .dark\:focus\:border-text-white:focus {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.dark .dark\:focus\:text-text-dark:focus {
-  --tw-text-opacity: 1;
-  color: rgb(162 161 166 / var(--tw-text-opacity));
 }
 
 .dark .dark\:focus\:text-text-white:focus {
@@ -1169,8 +1164,8 @@ textarea {
     justify-content: flex-start;
   }
 
-  .md\:justify-center {
-    justify-content: center;
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -1211,8 +1206,8 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  .lg\:justify-between {
-    justify-content: space-between;
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:py-\[80px\] {
