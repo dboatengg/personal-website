@@ -748,6 +748,24 @@ video {
   gap: 60px;
 }
 
+.gap-x-\[60px\] {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+
+.gap-y-\[30px\] {
+  row-gap: 30px;
+}
+
+.gap-x-\[50px\] {
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+.gap-y-\[20px\] {
+  row-gap: 20px;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
