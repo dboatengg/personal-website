@@ -14,6 +14,7 @@ textarea {
   background-color: transparent;
   outline: 0;
   transition: 0.3s ease-in-out;
+  resize: none;
   /* padding: 0 1rem; */
 }
 .blog-item {
