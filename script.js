@@ -1,27 +1,29 @@
 // accessing DOM elements
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
-const body = document.querySelector(".main");
-const navbar = document.querySelector(".navbar");
-const darkLogo = document.querySelector(".logo-dark");
-const lightLogo = document.querySelector(".logo-light");
-const iconMoon = document.querySelector(".icon-moon");
-const iconSun = document.querySelector(".icon-sun");
+const hamburger = document.querySelector(".hamburger"),
+  navMenu = document.querySelector(".nav-menu"),
+  navLink = document.querySelectorAll(".nav-link"),
+  bodyMain = document.querySelector(".main"),
+  navbar = document.querySelector(".navbar"),
+  darkLogo = document.querySelector(".logo-dark"),
+  lightLogo = document.querySelector(".logo-light"),
+  iconMoon = document.querySelector(".icon-moon"),
+  iconSun = document.querySelector(".icon-sun");
 
+// toggle nav menu
 hamburger.addEventListener("click", mobileMenu);
-body.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-});
-
 function mobileMenu() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 }
 
-navLink.forEach((n) => n.addEventListener("click", closeMenu));
+// close nav menu when user clicks anywhere on the page except on nav menu
+bodyMain.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+});
 
+// close nav menu when user click on a nav link
+navLink.forEach((n) => n.addEventListener("click", closeMenu));
 function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
@@ -32,7 +34,6 @@ window.onscroll = function () {
   let distanceScrolled = document.documentElement.scrollTop;
   if (distanceScrolled > 30) {
     navbar.classList.add("shadow");
-    // console.log(distanceScrolled);
   }
   if (distanceScrolled < 20) {
     navbar.classList.remove("shadow");

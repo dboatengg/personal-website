@@ -5,9 +5,10 @@
 /***********Epilogue font family*********/
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap");
 
+/****general styling*****/
 body {
   font-size: 18px;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 input,
 textarea {
@@ -15,23 +16,24 @@ textarea {
   outline: 0;
   transition: 0.3s ease-in-out;
   resize: none;
-  /* padding: 0 1rem; */
 }
-.blog-item {
-  width: 100%;
-  max-width: 400px;
-}
+
 /******dark/light mode******/
 .display-none {
   display: none;
 }
+.light-mode-icon {
+  cursor: pointer;
+}
+
+/****Nav Menu****/
 .navbar {
   z-index: 99;
+  transition: 0.2s ease-in-out;
 }
 .navbar.shadow {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
-/****Nav Menu****/
 .hamburger {
   display: none;
 }
@@ -43,15 +45,18 @@ textarea {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
+/*****works/projects*******/
 .card {
   z-index: 2;
 }
-.light-mode-icon {
-  cursor: pointer;
+/******blog**********/
+.blog-item {
+  width: 100%;
+  max-width: 400px;
 }
-.navbar {
-  transition: 0.3s ease-in-out;
-}
+
+/*******media query********/
 @media only screen and (max-width: 767px) {
   .light-mode-icon {
     position: absolute;

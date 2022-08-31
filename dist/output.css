@@ -598,6 +598,10 @@ video {
   margin-right: auto;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -616,10 +620,6 @@ video {
 
 .mt-\[-30px\] {
   margin-top: -30px;
-}
-
-.block {
-  display: block;
 }
 
 .flex {
@@ -796,11 +796,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-\[100px\] {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -826,9 +821,9 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-\[30px\] {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.py-\[100px\] {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .py-4 {
@@ -836,12 +831,17 @@ video {
   padding-bottom: 1rem;
 }
 
-.pb-\[40px\] {
-  padding-bottom: 40px;
+.py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .pt-\[100px\] {
   padding-top: 100px;
+}
+
+.pb-\[40px\] {
+  padding-bottom: 40px;
 }
 
 .pb-2 {
@@ -931,9 +931,11 @@ video {
 
 /***********Epilogue font family*********/
 
+/****general styling*****/
+
 body {
   font-size: 18px;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 input,
@@ -942,12 +944,6 @@ textarea {
   outline: 0;
   transition: 0.3s ease-in-out;
   resize: none;
-  /* padding: 0 1rem; */
-}
-
-.blog-item {
-  width: 100%;
-  max-width: 400px;
 }
 
 /******dark/light mode******/
@@ -956,15 +952,20 @@ textarea {
   display: none;
 }
 
+.light-mode-icon {
+  cursor: pointer;
+}
+
+/****Nav Menu****/
+
 .navbar {
   z-index: 99;
+  transition: 0.2s ease-in-out;
 }
 
 .navbar.shadow {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
-
-/****Nav Menu****/
 
 .hamburger {
   display: none;
@@ -978,17 +979,20 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
+/*****works/projects*******/
+
 .card {
   z-index: 2;
 }
 
-.light-mode-icon {
-  cursor: pointer;
+/******blog**********/
+
+.blog-item {
+  width: 100%;
+  max-width: 400px;
 }
 
-.navbar {
-  transition: 0.3s ease-in-out;
-}
+/*******media query********/
 
 @media only screen and (max-width: 767px) {
   .light-mode-icon {
@@ -1196,6 +1200,10 @@ textarea {
   .lg\:py-\[80px\] {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  .lg\:pt-\[80px\] {
+    padding-top: 80px;
   }
 
   .lg\:text-8xl {
